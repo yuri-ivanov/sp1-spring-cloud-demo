@@ -9,7 +9,10 @@ spring:
         native:
           searchLocations: file:///home/sb1a.sparebank1.no/a504342/sp1-spring-cloud-demo/config, file:///home/yivanov/sp1-spring-cloud-demo/config
         git:
-          uri: https://github.com/yuri-ivanov/sp1-spring-cloud-demo/tree/master/config
+          uri: https://github.com/yuri-ivanov/sp1-spring-cloud-demo.git
+          searchPaths: config
+          cloneOnStart: true
+
 
 server:
   port: 8888
