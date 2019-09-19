@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///home/sb1a.sparebank1.no/a504342/sp1-spring-cloud-demo/config
+
+server:
+  port: 8888
+
+
+
