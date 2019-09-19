@@ -2,15 +2,15 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
         native:
-          searchLocations: file:///home/sb1a.sparebank1.no/a504342/sp1-spring-cloud-demo/config
+          searchLocations: file:///home/sb1a.sparebank1.no/a504342/sp1-spring-cloud-demo/config, file:///home/yivanov/sp1-spring-cloud-demo/config
+        git:
+          uri: https://github.com/yuri-ivanov/sp1-spring-cloud-demo/tree/master/config
 
 server:
   port: 8888
-
-
 

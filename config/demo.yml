@@ -1,7 +1,7 @@
 spring:
   output.ansi.enabled: ALWAYS
 
-property1: valuefromserver1
+property1: valuefrom-git-server
 
 eureka:
   client:

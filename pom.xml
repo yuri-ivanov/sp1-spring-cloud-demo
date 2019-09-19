@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>spring-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-demo</name>
+    <name>spring-demo-pom</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
@@ -23,6 +23,7 @@
 
     <modules>
         <module>config-server</module>
+        <module>zipkin-server</module>
         <module>eureka</module>
         <module>demo</module>
     </modules>

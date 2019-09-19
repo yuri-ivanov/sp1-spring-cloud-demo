@@ -9,32 +9,53 @@
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>config-server</artifactId>
-	<name>config-server</name>
-	<description>Demo project for Spring Boot</description>
+	<groupId>com.example</groupId>
+	<artifactId>zipkin-server</artifactId>
+	<name>zipkin-server</name>
+	<description>Zipkin server</description>
+
+	<properties>
+		<zipkin-server-version>2.12.9</zipkin-server-version>
+	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
+		<!---->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- -->
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
+			<version>${zipkin-server-version}</version>
+		</dependency>
+
+		<!-- -->
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
+			<version>${zipkin-server-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		-->
 	</dependencies>
 
 </project>
