@@ -32,4 +32,12 @@ public class HelloServiceApplication implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println(config.property1);
 	}
+
+	/*
+	@Bean
+	public Sampler getSampler() {
+		return Sampler.ALWAYS_SAMPLE;
+	}
+	*/
+
 }

@@ -16,7 +16,7 @@ public class HelloResource {
     }
 
     @GET
-    public String getUserInfo(){
-        return "my custom user info property: "+config.getProperty1();
+    public String getInfo(){
+        return "hello-service property: "+config.getProperty1();
     }
 }
