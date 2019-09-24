@@ -1,11 +1,10 @@
 spring:
   output.ansi.enabled: ALWAYS
 
-server:
-  port: 8080
-
 property1: valuefrom-git-server
 
+server:
+  port: 8081
 
 eureka:
   client:
@@ -13,4 +12,3 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
-
